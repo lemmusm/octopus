@@ -2,4 +2,8 @@
 
 @tailwind components;
 
+* {
+  @apply font-body;
+}
+
 @tailwind utilities;
