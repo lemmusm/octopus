@@ -4,6 +4,7 @@
 
 * {
   @apply font-body;
+  color: #2c3e50;
 }
 
 @tailwind utilities;
