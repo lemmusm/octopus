@@ -1,9 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Manuel Hernandez Lemus`,
+    title: `Octopus`,
     description: `Personal web site`,
     author: `@lemmusm`,
-    siteURL: "https://octopus.com",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -26,6 +25,14 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets/,
+        },
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
