@@ -14,7 +14,7 @@ const Proyectos = () => {
           </p>
         </div>
         <div className="px-6 py-4">
-          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 linkProjects">
+          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 my-1 text-sm font-semibold text-gray-700 mr-2 linkProjects">
             <a
               href="https://www.uni-ca.com.mx/"
               target="_blank"
@@ -23,7 +23,7 @@ const Proyectos = () => {
               Visit site
             </a>
           </span>
-          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 linkProjects">
+          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 my-1 text-sm font-semibold text-gray-700 mr-2 linkProjects">
             <a
               href="https://github.com/lemmusm/unica-nxjs"
               target="_blank"
@@ -45,7 +45,7 @@ const Proyectos = () => {
           </p>
         </div>
         <div className="px-6 py-4">
-          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 linkProjects">
+          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 my-1 text-sm font-semibold text-gray-700 mr-2 linkProjects">
             <a
               href="http://uppenjamo.edu.mx/sistemas"
               target="_blank"
@@ -54,7 +54,7 @@ const Proyectos = () => {
               Visit site
             </a>
           </span>
-          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 linkProjects">
+          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 my-1 text-sm font-semibold text-gray-700 mr-2 linkProjects">
             <a
               href="https://github.com/lemmusm/Tickets-Service-Angular"
               target="_blank"
@@ -63,7 +63,7 @@ const Proyectos = () => {
               Front-end Github
             </a>
           </span>
-          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 linkProjects">
+          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 my-1 text-sm font-semibold text-gray-700 mr-2 linkProjects">
             <a
               href="https://github.com/lemmusm/API-Tickets-Service-Laravel"
               target="_blank"
@@ -85,7 +85,7 @@ const Proyectos = () => {
           </p>
         </div>
         <div className="px-6 py-4">
-          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 linkProjects">
+          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 my-1 text-sm font-semibold text-gray-700 mr-2 linkProjects">
             <a
               href="https://www.uppenjamo.edu.mx/"
               target="_blank"
@@ -94,7 +94,7 @@ const Proyectos = () => {
               Visit site
             </a>
           </span>
-          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 linkProjects">
+          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 my-1 text-sm font-semibold text-gray-700 mr-2 linkProjects">
             <a
               href="https://github.com/lemmusm/uppenjamo"
               target="_blank"
@@ -118,7 +118,7 @@ const Proyectos = () => {
           </p>
         </div>
         <div className="px-6 py-4">
-          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 linkProjects">
+          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 my-1 text-sm font-semibold text-gray-700 mr-2 linkProjects">
             <a
               href="https://www.uppenjamo.edu.mx/sgi/"
               target="_blank"
@@ -127,7 +127,7 @@ const Proyectos = () => {
               Visit site
             </a>
           </span>
-          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 linkProjects">
+          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 my-1 text-sm font-semibold text-gray-700 mr-2 linkProjects">
             <a
               href="https://github.com/lemmusm/sgi-up-public"
               target="_blank"
@@ -148,7 +148,7 @@ const Proyectos = () => {
           </p>
         </div>
         <div className="px-6 py-4">
-          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 linkProjects">
+          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 my-1 text-sm font-semibold text-gray-700 mr-2 linkProjects">
             <a
               href="https://www.radioirapuato.com/"
               target="_blank"
@@ -171,7 +171,7 @@ const Proyectos = () => {
           </p>
         </div>
         <div className="px-6 py-4">
-          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 linkProjects">
+          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 my-1 text-sm font-semibold text-gray-700 mr-2 linkProjects">
             <a
               href="https://github.com/lemmusm/octopus"
               target="_blank"
