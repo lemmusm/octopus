@@ -166,8 +166,8 @@ const Proyectos = () => {
             PERSONAL PORTFOLIO WEBSITE
           </div>
           <p className="text-gray-700 text-base">
-            Is this website, developed with GatsbyJS, Tailwind CSS, styled
-            components Medium API.
+            Is this website, developed with GatsbyJS, Tailwind CSS, Styled
+            Components and Medium API.
           </p>
         </div>
         <div className="px-6 py-4">
