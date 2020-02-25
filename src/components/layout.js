@@ -30,18 +30,25 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div className="flex flex-wrap px-5 sm:mt-40 md:mt-40 xl:mt-20 md:px-10 lg:px-32">
+      <div className="flex flex-wrap px-1 mt-32 sm:mt-40 md:mt-40 lg:mt-20 lg:px-12 xl:px-32">
         <main className="flex w-full">{children}</main>
         <footer className="flex w-full inline-block text-xs font-light justify-center items-center my-5">
           <Code className="inline-block mr-1" /> with
-          <Love className="inline-block ml-1 mr-1" /> by Manuel Hdez Lemus ©
-          {new Date().getFullYear()}, built with{" "}
+          <Love className="heart inline-block ml-1 mr-1" />{" "}
+          <a
+            href="https://twitter.com/lemmusm"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            by Manuel Hdez Lemus
+          </a>
+          ©{new Date().getFullYear()}, built with{" "}
           <a
             href="https://www.gatsbyjs.org/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <GatsbyLogo className="inline-block ml-2 mr-2" />
+            <GatsbyLogo className="inline-block ml-1 mr-1" />
           </a>
         </footer>
       </div>

@@ -53,7 +53,7 @@ const Header = () => {
   }
 
   return (
-    <header className="flex flex-wrap w-full px-1 lg:px-32 bg-white p-2 pt-10 lg:pt-20 xl:pt-20 mt-0 fixed z-10 top-0">
+    <header className="flex flex-wrap w-full px-1 lg:px-12 xl:px-32 bg-white p-2 pt-10 lg:pt-20 xl:pt-20 mt-0 fixed z-10 top-0">
       <div className="flex w-full mb-5 lg:mb-0 xl:mb-0 lg:w-1/2 xl:w-1/2 px-5 font-bold">
         <Link className="flex items-center flex-shrink-0 mr-2" to="/">
           <svg
@@ -82,12 +82,10 @@ const Header = () => {
               fill="url(#linear0)"
             />
           </svg>
-          <LogoText className="font-bold ml-3 text-4xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl  hidden sm:inline-block md:inline-block lg:inline-block xl:inline-block">
+          <LogoText className="font-bold ml-3 text-4xl hidden sm:inline-block md:inline-block lg:inline-block xl:inline-block">
             OCTOPUS
           </LogoText>
-          <Path className="text-4xl sm:text-4xl md:text-4xl lg:text-3xl xl:text-4xl  font-light">
-            {path}
-          </Path>
+          <Path className="text-4xl font-normal">{path}</Path>
         </Link>
       </div>
       <div className="flex w-full  lg:mb-0 xl:mb-0 lg:w-1/2 xl:w-1/2">
