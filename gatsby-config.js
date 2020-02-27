@@ -14,10 +14,10 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-medium`,
+      resolve: `gatsby-source-rss-feed`,
       options: {
-        username: `@lemmusm`,
-        limit: 200,
+        url: `https://medium.com/feed/@lemmusm`,
+        name: `MediumBlog`,
       },
     },
     {
