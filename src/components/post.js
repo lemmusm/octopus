@@ -1,33 +1,31 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 
 const Post = ({ data }) => {
+  // Filter null content in contentSnippet
+  const filterData = data.allFeedMediumBlog.edges.filter(
+    item => item.node.contentSnippet !== null
+  )
   return (
     <div className="w-full flex flex-wrap">
-      {data.allMediumPost.edges.map(post => (
-        <div
-          className="w-full sm:w-1/2 py-5 rounded overflow-hidden shadow-lg"
-          key={post.node.id}
-        >
-          <img
-            class="w-full"
-            src={`https://miro.medium.com/fit/c/520/156/${post.node.virtuals.previewImage.imageId}`}
-            alt="Sunset in the mountains"
-          ></img>
+      {filterData.map(post => (
+        <div className="w-full sm:w-1/2 py-5 " key={post.node.id}>
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2">{post.node.title}</div>
             <p className="text-gray-700 text-base my-1">
-              <strong>Preview: </strong>
-              {post.node.virtuals.subtitle}
+              {post.node.contentSnippet.replace(
+                "Continue reading on Medium »",
+                " »"
+              )}
             </p>
           </div>
           <div className="px-6 py-4">
-            <span className="inline-block bg-gray-300 rounded-full px-3 py-1 my-1 text-sm font-semibold text-blue-500 mr-2 linkProjects">
+            <span className="inline-block bg-transparent px-3 py-1 my-1 text-sm font-semibold mr-2 linkProjects text-gray-700 rounded">
               <a
-                href={`https://medium.com/@lemmusm/${post.node.uniqueSlug}`}
+                href={post.node.link}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Read post
+                Continue reading...
               </a>
             </span>
           </div>

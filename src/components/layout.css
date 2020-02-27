@@ -7,6 +7,8 @@
   -webkit-text-fill-color: transparent;
 }
 .linkProjects {
+  border: 1px solid #00a0fe;
+  color: #00a0fe;
   transition: 0.7s;
 }
 .linkProjects:hover {

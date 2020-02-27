@@ -121,7 +121,9 @@ const Header = () => {
             </li>
             <li className="mr-2">
               <BtnDownload
-                href="#"
+                href="https://drive.google.com/file/d/1GN1GIXSJTssVPQUfH7WcdgvDotZtB92K/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-sm px-4 py-2 leading-none rounded  hover:text-black mt-4 lg:mt-0"
               >
                 Download CV
