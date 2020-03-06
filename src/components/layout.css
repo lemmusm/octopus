@@ -1,7 +1,9 @@
 /* Gradient text */
 .gradientText {
+  text-decoration: none;
   color: var(--textNormal);
-  background: linear-gradient(90deg, #00c6ff 0, #00a0fe 50%, #0172ff);
+  background: -webkit-linear-gradient(to left, #00c6ff, #0172ff);
+  background: linear-gradient(to left, #00c6ff, #0172ff);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

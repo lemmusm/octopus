@@ -30,14 +30,15 @@ const IndexPage = () => (
         <h1 className="text-4xl sm:text-5xl gradientText">Resume</h1>
         <p className="mt-6 font-light">
           I have experience in different technologies and programming languages
-          like Javascript, HTML, CSS, PHP, MySQL, REST Web Services; just to
-          mention some of them.
+          like
+          <strong> Javascript, HTML, CSS, PHP, MySQL, REST Web Services</strong>
+          ; just to mention some of them.
         </p>
         <p className="flex w-full mt-5 font-light">
-          I focus mainly on Front-end, working with Angular, React.js, Next.js
-          and Gatsby; in Back-end with Laravel, MongoDB and Node.js to create
-          REST services in addition to Firebase for authentication and realtime
-          database.
+          Work with frameworks and libraries like with Angular, React.js,
+          Next.js and Gatsby in Front-end; Back-end with Laravel, MongoDB and
+          Node.js to create REST services in addition to Firebase for
+          authentication and realtime database.
         </p>
       </div>
 
