@@ -9,7 +9,7 @@ const Servicios = () => {
     <div className="w-full flex flex-wrap">
       <div className="w-full sm:w-1/2 py-5">
         <div className="justify-center flex w-full">
-          <WebsiteIcon className="iconServices" />
+          <WebsiteIcon className="pulso" />
         </div>
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2 text-center py-3">
@@ -25,7 +25,7 @@ const Servicios = () => {
 
       <div className="w-full sm:w-1/2 py-5">
         <div className="justify-center flex">
-          <AppsIcon className="iconServices" />
+          <AppsIcon className="pulso" />
         </div>
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2 text-center py-3">Apps</div>
@@ -38,7 +38,7 @@ const Servicios = () => {
 
       <div className="w-full sm:w-1/2 py-5">
         <div className="justify-center flex">
-          <WebappIcon className="iconServices" />
+          <WebappIcon className="pulso" />
         </div>
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2 text-center py-3">
@@ -54,7 +54,7 @@ const Servicios = () => {
 
       <div className="w-full sm:w-1/2 py-5">
         <div className="justify-center flex">
-          <MarketingIcon className="iconServices" />
+          <MarketingIcon className="pulso" />
         </div>
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2 text-center py-3">

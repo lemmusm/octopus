@@ -1,3 +1,12 @@
+/* header */
+header {
+  background-color: #f9f7e5;
+}
+
+body {
+  background-color: #f9f7e5;
+}
+
 /* Gradient text */
 .gradientText {
   text-decoration: none;
@@ -130,6 +139,6 @@
   }
 }
 
-.iconServices:hover {
+.pulso:hover {
   animation: pulse 1s ease infinite;
 }
