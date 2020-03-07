@@ -11,7 +11,7 @@ const SecondPage = () => (
   <Layout>
     <SEO title="Contact" />
     <div className="lg:mt-20 pt-20 xl:0 p-5 w-full flex flex-wrap">
-      <div className="w-1/4 py-5">
+      <div className="w-1/2 md:w-1/4 py-5">
         <div className="w-full flex px-6 py-4 justify-center">
           <a
             href="https://github.com/lemmusm"
@@ -23,7 +23,7 @@ const SecondPage = () => (
           </a>
         </div>
       </div>
-      <div className="w-1/4 py-5">
+      <div className="w-1/2 md:w-1/4 py-5">
         <div className="w-full flex px-6 py-4 justify-center">
           <a
             href="https://www.linkedin.com/in/lemmusm/"
@@ -35,7 +35,7 @@ const SecondPage = () => (
           </a>
         </div>
       </div>
-      <div className="w-1/4 py-5">
+      <div className="w-1/2 md:w-1/4 py-5">
         <div className="w-full flex px-6 py-4 justify-center">
           <a
             href="https://twitter.com/lemmusm"
@@ -47,7 +47,7 @@ const SecondPage = () => (
           </a>
         </div>
       </div>
-      <div className="w-1/4 py-5">
+      <div className="w-1/2 md:w-1/4 py-5">
         <div className="w-full flex px-6 py-4 justify-center">
           <a
             href="https://medium.com/@lemmusm"
