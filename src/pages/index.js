@@ -35,10 +35,9 @@ const IndexPage = () => (
           ; just to mention some of them.
         </p>
         <p className="flex w-full mt-5 font-light">
-          Work with frameworks and libraries like with Angular, React.js,
-          Next.js and Gatsby in Front-end; Back-end with Laravel, MongoDB and
-          Node.js to create REST services in addition to Firebase for
-          authentication and realtime database.
+          Work with Angular, React.js, Next.js and Gatsby in Front-end; Back-end
+          with Laravel, MongoDB and Node.js to create REST services and Firebase
+          for authentication and realtime database.
         </p>
       </div>
 

@@ -62,7 +62,7 @@ const SecondPage = () => (
       <div className="w-full py-2">
         <div className="w-full flex justify-center">
           <a
-            href="https://github.com/lemmusm"
+            href="mailto:lemmusm@gmail.com"
             rel="noopener noreferrer"
             className="gradientText"
             target="_blank"
