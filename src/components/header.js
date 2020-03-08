@@ -56,7 +56,7 @@ const Header = () => {
     <header className="flex flex-wrap w-full px-1 lg:px-12 xl:px-32 p-2 pt-10 lg:pt-20 xl:pt-20 mt-0 fixed z-10 top-0">
       <div className="flex w-full mb-5 lg:mb-0 xl:mb-0 lg:w-1/2 xl:w-1/2 px-5 font-bold">
         <Link className="flex items-center flex-shrink-0 mr-2" to="/">
-          <div className="pulso">
+          <div className="rocket">
             <svg
               height="50"
               viewBox="0 0 512.004 512.004"
