@@ -1,10 +1,10 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import Layout from "../components/layout"
+import Layout from "../layouts/layout"
 import SEO from "../components/seo"
 import Post from "../components/post"
 
-const SecondPage = () => {
+const BlogPage = () => {
   const data = useStaticQuery(graphql`
     query {
       allFeedMediumBlog {
@@ -35,7 +35,7 @@ const SecondPage = () => {
             href="https://medium.com/@lemmusm"
             target="_blank"
             rel="noopener noreferrer"
-            class="bg-transparent font-semibold py-2 px-4 border linkProjects rounded"
+            className="bg-transparent font-semibold py-2 px-4 border linkProjects rounded"
           >
             Load more posts...
           </a>
@@ -45,4 +45,4 @@ const SecondPage = () => {
   )
 }
 
-export default SecondPage
+export default BlogPage

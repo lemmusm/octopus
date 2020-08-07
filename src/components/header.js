@@ -4,22 +4,6 @@ import React from "react"
 import { globalHistory } from "@reach/router"
 import styled from "styled-components"
 
-const LogoText = styled.span`
-  text-decoration: none;
-  color: var(--textNormal);
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#00c6ff),
-    color-stop(50%, #00a0fe),
-    to(#0172ff)
-  );
-  background: linear-gradient(90deg, #00c6ff 0, #00a0fe 50%, #0172ff);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-`
 const Path = styled.span`
   text-decoration: none;
   color: var(--textNormal);
@@ -46,7 +30,7 @@ const active = {
   color: "black",
 }
 
-const Header = () => {
+const Header = ({ Rutas }) => {
   let path = globalHistory.location.pathname
   if (path === "/") {
     path = "/about me"
@@ -127,34 +111,20 @@ const Header = () => {
       <div className="flex w-full  lg:mb-0 xl:mb-0 lg:w-1/2 xl:w-1/2">
         <nav className="flex flex-wrap w-full p-6 ">
           <ul className="flex w-full justify-between inline-flex">
-            <li className="mr-2">
-              <Link
-                to={"/"}
-                className="text-gray-600 hover:text-black"
-                activeStyle={active}
-              >
-                About me
-              </Link>
-            </li>
+            {Rutas.map((ruta, index) => {
+              return (
+                <li className="mr-2" key={index}>
+                  <Link
+                    to={ruta.link_ruta}
+                    className="text-gray-600 hover:text-black"
+                    activeStyle={active}
+                  >
+                    {ruta.titulo_ruta}
+                  </Link>
+                </li>
+              )
+            })}
 
-            <li className="mr-2">
-              <Link
-                to="/blog"
-                className="text-gray-600 hover:text-black"
-                activeStyle={active}
-              >
-                Blog
-              </Link>
-            </li>
-            <li className="mr-2">
-              <Link
-                to="/contact"
-                className="text-gray-600 hover:text-black"
-                activeStyle={active}
-              >
-                Contact
-              </Link>
-            </li>
             <li className="mr-2">
               <BtnDownload
                 href="https://drive.google.com/file/d/1GN1GIXSJTssVPQUfH7WcdgvDotZtB92K/view?usp=sharing"

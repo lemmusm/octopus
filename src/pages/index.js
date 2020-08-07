@@ -1,6 +1,6 @@
 import React from "react"
 import TextLoop from "react-text-loop"
-import Layout from "../components/layout"
+import Layout from "../layouts/layout"
 import SEO from "../components/seo"
 import ArrowDown from "../assets/svg/arrow-down.svg"
 import Servicios from "../components/services"
