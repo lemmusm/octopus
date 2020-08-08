@@ -46,8 +46,8 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#2980b9`,
-        theme_color: `#2980b9`,
+        background_color: `#15202B`,
+        theme_color: `#15202B`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
