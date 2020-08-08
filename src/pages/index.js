@@ -6,6 +6,14 @@ import ArrowDown from "../assets/svg/arrow-down.svg"
 import Servicios from "../components/services"
 import Proyectos from "../components/projects"
 
+const scrollDown = () => {
+  window.scroll({
+    top: 500,
+    left: 100,
+    behavior: "smooth",
+  })
+}
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
@@ -14,35 +22,42 @@ const IndexPage = () => (
         <div className="font-light text-5xl md:text-6xl">
           I make web and mobile products with{" "}
           <TextLoop>
-            <span className="font-bold gradientText">Javascript.</span>
-            <span className="font-bold gradientText">Angular.</span>
-            <span className="font-bold gradientText">Reactjs.</span>
-            <span className="font-bold gradientText">Flutter.</span>
+            <span className="font-bold gradientTitle">Javascript.</span>
+            <span className="font-bold gradientTitle">React.</span>
+            <span className="font-bold gradientTitle">Angular.</span>
+            <span className="font-bold gradientTitle">Flutter.</span>
+            <span className="font-bold gradientTitle">NodeJS.</span>
+            <span className="font-bold gradientTitle">PHP.</span>
+            <span className="font-bold gradientTitle">and more.</span>
           </TextLoop>{" "}
         </div>
       </div>
 
       <div className="flex w-full items-center justify-center mb-4">
-        <ArrowDown className="bounce" />
+        <ArrowDown onClick={scrollDown} className="bounce" />
       </div>
 
       <div className="mt-24">
-        <h1 className="text-4xl sm:text-5xl gradientText">Resume</h1>
+        <h1 className="text-4xl sm:text-5xl gradientTitle">Resume</h1>
         <p className="mt-6 font-light">
           I have experience in different technologies and programming languages
           like
-          <strong> Javascript, HTML, CSS, PHP, MySQL, REST Web Services</strong>
+          <strong>
+            {" "}
+            Javascript, HTML, CSS, PHP, MySQL, API REST and serverless
+            frameworks
+          </strong>
           ; just to mention some of them.
         </p>
         <p className="flex w-full mt-5 font-light">
-          Work with Angular, React.js, Next.js and Gatsby in Front-end; Back-end
-          with Laravel, MongoDB and Node.js to create REST services and Firebase
-          for authentication and realtime database.
+          I work with Angular, React, Next.js and Gatsby in Frontend; Backend
+          with Laravel, CodeIgniter, MongoDB, Node.js and MySQL to create REST
+          services and Firebase for authentication and realtime database.
         </p>
       </div>
 
       <div className="mt-20 w-full">
-        <h1 className="flex w-full text-right text-4xl sm:text-5xl gradientText">
+        <h1 className="flex w-full text-right text-4xl sm:text-5xl gradientTitle">
           Services
         </h1>
 
@@ -50,7 +65,7 @@ const IndexPage = () => (
       </div>
 
       <div className="mt-20 w-full">
-        <h1 className="flex w-full text-right text-4xl sm:text-5xl gradientText">
+        <h1 className="flex w-full text-right text-4xl sm:text-5xl gradientTitle">
           Projects
         </h1>
         <div className="flex w-full mt-6 font-light sm:text-2xl">

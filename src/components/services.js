@@ -15,7 +15,7 @@ const Servicios = () => {
           <div className="font-bold text-xl mb-2 text-center py-3">
             Websites
           </div>
-          <p className="text-gray-700 text-base py-4">
+          <p className="colorText text-base py-4">
             I used technologies like html, css, bootstrap, tailwind, javascript,
             gatsby, next.js, angular universal; build functional websites,
             thoroughly planned, custom coded and tested.
@@ -29,7 +29,7 @@ const Servicios = () => {
         </div>
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2 text-center py-3">Apps</div>
-          <p className="text-gray-700 text-base py-4">
+          <p className="colorText text-base py-4">
             I build cross-platform applications for iOS and Android with
             Flutter, saving time and costs in its development.
           </p>
@@ -44,7 +44,7 @@ const Servicios = () => {
           <div className="font-bold text-xl mb-2 text-center py-3">
             Web Apps
           </div>
-          <p className="text-gray-700 text-base">
+          <p className="colorText text-base">
             Web applications created according to customer needs with
             technologies like Angular or React, easy to maintain and interact
             with the end user.
@@ -60,7 +60,7 @@ const Servicios = () => {
           <div className="font-bold text-xl mb-2 text-center py-3">
             Digital Marketing
           </div>
-          <p className="text-gray-700 text-base">
+          <p className="colorText text-base">
             Digital Marketing in broad terms is any tool, strategy, or method
             which helps to make your company more searchable and more recognized
             by your potential clients.

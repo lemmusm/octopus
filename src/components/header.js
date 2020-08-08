@@ -2,35 +2,13 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import { globalHistory } from "@reach/router"
-import styled from "styled-components"
+import ToggleButton from "./toggle_button"
 
-const Path = styled.span`
-  text-decoration: none;
-  color: var(--textNormal);
-  background: -webkit-linear-gradient(to left, #f2709c, #ff9472);
-  background: linear-gradient(to left, #f2709c, #ff9472);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-`
-
-const BtnDownload = styled.a`
-  color: white;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#00c6ff),
-    color-stop(50%, #00a0fe),
-    to(#0172ff)
-  );
-  background: linear-gradient(90deg, #00c6ff 0, #00a0fe 50%, #0172ff);
-`
 const active = {
-  color: "black",
+  color: "#F88286",
 }
 
-const Header = ({ Rutas }) => {
+const Header = ({ Rutas, toggleTheme }) => {
   let path = globalHistory.location.pathname
   if (path === "/") {
     path = "/about me"
@@ -105,7 +83,7 @@ const Header = ({ Rutas }) => {
               />
             </svg>
           </div>
-          <Path className="text-4xl font-bold">{path}</Path>
+          <span className="gradientTitle text-4xl font-bold">{path}</span>
         </Link>
       </div>
       <div className="flex w-full  lg:mb-0 xl:mb-0 lg:w-1/2 xl:w-1/2">
@@ -116,7 +94,7 @@ const Header = ({ Rutas }) => {
                 <li className="mr-2" key={index}>
                   <Link
                     to={ruta.link_ruta}
-                    className="text-gray-600 hover:text-black"
+                    className="colorMenu"
                     activeStyle={active}
                   >
                     {ruta.titulo_ruta}
@@ -124,16 +102,8 @@ const Header = ({ Rutas }) => {
                 </li>
               )
             })}
-
             <li className="mr-2">
-              <BtnDownload
-                href="https://drive.google.com/file/d/1GN1GIXSJTssVPQUfH7WcdgvDotZtB92K/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm px-4 py-2 leading-none rounded  hover:text-black mt-4 lg:mt-0"
-              >
-                Download CV
-              </BtnDownload>
+              <ToggleButton toggleTheme={toggleTheme} />
             </li>
           </ul>
         </nav>

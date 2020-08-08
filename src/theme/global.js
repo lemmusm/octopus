@@ -1,45 +1,74 @@
-/* header */
-header {
-  background-color: #f9f7e5;
-}
+import { createGlobalStyle } from "styled-components"
 
-body {
-  background-color: #f9f7e5;
-}
+export const GlobalStyles = createGlobalStyle`
+  
+  body {
+    background: ${({ theme }) => theme.body};
+    color: ${({ theme }) => theme.text};
+    transition: all 0.25s linear;
+  }
 
-/* Gradient text */
-.gradientText {
-  text-decoration: none;
-  color: var(--textNormal);
-  background: -webkit-linear-gradient(to left, #00c6ff, #0172ff);
-  background: linear-gradient(to left, #00c6ff, #0172ff);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+  header {
+    background: ${({ theme }) => theme.body};
+    transition: all 0.25s linear;
+  }
+
+  .colorText{
+    color: ${({ theme }) => theme.textContent};
+  }
+
+  .colorMenu{
+    color: ${({ theme }) => theme.textContent};
+  }
+  .colorMenu:hover{
+    color: #F3719B;
+  }
+
+  .toggleBtn{
+    outline: none;
+    border: none;
+    cursor: pointer !important;
+  }
+
+  .toggleBtn:focus{
+    outline: none;
+    border: none;
+  }
+
+  .toggleBtn:active{
+    outline: none;
+    border: none;
+  }
+  
+  .gradientTitle{
+    text-decoration: none;
+    color: var(--textNormal);
+    background: -webkit-linear-gradient(to left, #f2709c, #ff9472);
+    background: linear-gradient(to left, #f2709c, #ff9472);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
 .linkProjects {
-  border: 1px solid #00a0fe;
-  color: #00a0fe;
+  border: 1px solid #F98484;
+  color: #F98484;
   transition: 0.7s;
 }
 .linkProjects:hover {
   color: white;
-  background: linear-gradient(90deg, #00c6ff 0, #00a0fe 50%, #0172ff);
+  background: linear-gradient(90deg, #FE987C 0, #F98484 50%, #F2719B);
 }
 
 .linkContactFooter {
-  fill: #2c3e50;
-  margin: 1rem 0;
-  display: flex;
+  fill: ${({ theme }) => theme.textContent};
+  margin: 1rem .5rem;
   width: 1rem;
   height: 0.9rem;
-  justify-content: center;
-  align-items: center;
-  position: relative;
 }
 
 .linkContact {
-  fill: #2c3e50;
+  fill: ${({ theme }) => theme.textContent};
   margin: 1rem 0;
   display: flex;
   border-radius: 7rem;
@@ -48,12 +77,10 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  transition: all 0.3s ease-in;
 }
 
 .linkContact:hover {
-  fill: white;
-  background-color: #f2709c;
+  fill: ${({ theme }) => theme.iconsHover};;
 }
 
 /* Arrow down */
@@ -172,3 +199,4 @@ body {
 .pulso:hover {
   animation: pulse 1s ease infinite;
 }
+  `
