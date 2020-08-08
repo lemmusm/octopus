@@ -75,7 +75,7 @@ function SEO({ description, lang, meta, title }) {
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
-  description: `Javascript Web Developer, I make web and mobile products with React, Angular, Flutter, NodeJS, PHP and more.`,
+  description: `Javascript Web Developer, I make web and mobile products with React, Angular, Flutter, NodeJS, Firebase, PHP and more.`,
 }
 
 SEO.propTypes = {
