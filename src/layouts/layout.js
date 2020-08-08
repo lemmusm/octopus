@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -13,19 +13,21 @@ import Footer from "../components/footer"
 import "../assets/css/global.css"
 
 const Layout = ({ children }) => {
-  !localStorage.getItem("theme") && localStorage.setItem("theme", "light")
-  let getThemeLocalStorage = localStorage.getItem("theme")
+  const storedTheme =
+    typeof window !== "undefined" && window.localStorage.getItem("theme")
 
-  const [theme, setTheme] = useState(getThemeLocalStorage)
-  const toggleTheme = () => {
-    if (theme === "light") {
-      setTheme("dark")
-      localStorage.setItem("theme", "dark")
-    } else {
-      setTheme("light")
-      localStorage.setItem("theme", "light")
+  const [theme, setTheme] = useState(storedTheme || "light")
+
+  const toggleTheme = () =>
+    setTheme(prevTheme => {
+      return prevTheme === "light" ? "dark" : "light"
+    })
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.localStorage.setItem("theme", theme)
     }
-  }
+  }, [theme])
 
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
