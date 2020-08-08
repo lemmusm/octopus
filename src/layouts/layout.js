@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -18,16 +18,19 @@ const Layout = ({ children }) => {
 
   const [theme, setTheme] = useState(storedTheme || "light")
 
-  const toggleTheme = () =>
-    setTheme(prevTheme => {
-      return prevTheme === "light" ? "dark" : "light"
-    })
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      window.localStorage.setItem("theme", theme)
+  const toggleTheme = () => {
+    if (theme === "light") {
+      setTheme("dark")
+      if (typeof window !== "undefined") {
+        window.localStorage.setItem("theme", "dark")
+      }
+    } else {
+      setTheme("light")
+      if (typeof window !== "undefined") {
+        window.localStorage.setItem("theme", "light")
+      }
     }
-  }, [theme])
+  }
 
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
