@@ -49,6 +49,7 @@ const Layout = ({ children }) => {
         <Header
           Rutas={Rutas}
           toggleTheme={toggleTheme}
+          theme={theme}
           siteTitle={data.site.siteMetadata.title}
         />
         <div className="flex flex-wrap px-1 mt-32 sm:mt-40 md:mt-40 lg:mt-20 lg:px-12 xl:px-32">

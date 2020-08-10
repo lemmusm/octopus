@@ -8,7 +8,7 @@ const active = {
   color: "#F88286",
 }
 
-const Header = ({ Rutas, toggleTheme }) => {
+const Header = ({ Rutas, toggleTheme, theme }) => {
   let path = globalHistory.location.pathname
   if (path === "/") {
     path = "/about me"
@@ -103,7 +103,7 @@ const Header = ({ Rutas, toggleTheme }) => {
               )
             })}
             <li className="mr-2">
-              <ToggleButton toggleTheme={toggleTheme} />
+              <ToggleButton toggleTheme={toggleTheme} theme={theme} />
             </li>
           </ul>
         </nav>
