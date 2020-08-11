@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 
 <h1 align="center">
-  PORTAFOLIO
+  ABOUT
 </h1>
 
 Javascript Frontend Developer, I make web and mobile products with React, Angular, Flutter, NodeJS, Firebase, PHP and more.
