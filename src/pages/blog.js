@@ -25,9 +25,7 @@ const BlogPage = () => {
     <Layout>
       <SEO title="Blog" />
       <div className="lg:mt-20 pt-20 xl:0 p-5 flex flex-wrap">
-        <h1 className="flex w-full text-right text-4xl sm:text-5xl gradientTitle">
-          Posts
-        </h1>
+        <h1 className="text-4xl sm:text-5xl gradientTitle">Posts</h1>
         <Post data={data} />
 
         <div className="flex w-full justify-center ">

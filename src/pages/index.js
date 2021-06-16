@@ -49,17 +49,13 @@ const IndexPage = () => (
       </div>
 
       <div className="mt-20 w-full">
-        <h1 className="flex w-full text-right text-4xl sm:text-5xl gradientTitle">
-          Services
-        </h1>
+        <h1 className="text-4xl sm:text-5xl gradientTitle">Services</h1>
 
         <Servicios />
       </div>
 
       <div className="mt-20 w-full">
-        <h1 className="flex w-full text-right text-4xl sm:text-5xl gradientTitle">
-          Projects
-        </h1>
+        <h1 className="text-4xl sm:text-5xl gradientTitle">Projects</h1>
         <div className="flex w-full mt-6 font-light sm:text-2xl">
           <Proyectos />
         </div>

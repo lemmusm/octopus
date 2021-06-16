@@ -9,7 +9,7 @@ const Proyectos = () => {
             MOBILE APPS (PREP-CASILLA, PREP-DIGITALIZACIÓN AND BODEGA ELECTORAL)
           </div>
           <p className="colorText text-base">
-            Working at the Electoral Institute of the State of Guanajuato, I
+            Working at the Instituto Electoral del Estado de Guanajuato, I
             developed android and web applications with Flutter and Angular,
             these applications helped in the 2021 electoral process of
             Guanajuato, Mexico to obtain the preliminary results (PREP).
