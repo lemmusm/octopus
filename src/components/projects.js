@@ -5,6 +5,20 @@ const Proyectos = () => {
     <div className="w-full flex flex-wrap">
       <div className="w-full sm:w-1/2 py-5">
         <div className="px-6 py-4">
+          <div className="font-bold text-xl mb-2">
+            MOBILE APPS (PREP-CASILLA, PREP-DIGITALIZACIÓN AND BODEGA ELECTORAL)
+          </div>
+          <p className="colorText text-base">
+            Working at the Electoral Institute of the State of Guanajuato, I
+            developed android and web applications with Flutter and Angular,
+            these applications helped in the 2021 electoral process of
+            Guanajuato, Mexico to obtain the preliminary results (PREP).
+          </p>
+        </div>
+      </div>
+
+      <div className="w-full sm:w-1/2 py-5">
+        <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">HEALTH WEBSITE</div>
           <p className="colorText text-base">
             Website for "UNI-CA Clínica Ambulatoria" developed with
