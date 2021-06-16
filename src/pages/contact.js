@@ -5,7 +5,6 @@ import SEO from "../components/seo"
 
 import ContactMenu from "../routes/contact_menu"
 
-console.log(ContactMenu)
 const ContactPage = () => {
   return (
     <Layout>
