@@ -1,7 +1,7 @@
 import React from "react"
 import TextLoop from "react-text-loop"
 import Layout from "../layouts/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import ArrowDown from "../assets/svg/arrow-down.svg"
 import Servicios from "../components/services"
 import Proyectos from "../components/projects"
@@ -16,7 +16,7 @@ const scrollDown = () => {
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <Seo title="Home" />
     <div className="lg:mt-20 xl:0 p-5 flex flex-wrap">
       <div className="flex w-full py-20 p-3 text-center items-center font-bold">
         <div className="font-light text-5xl md:text-6xl">

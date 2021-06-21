@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components"
 
 export const GlobalStyles = createGlobalStyle`
-  
+
   body {
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
@@ -24,6 +24,50 @@ export const GlobalStyles = createGlobalStyle`
     color: #F3719B;
   }
 
+  .checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+.label {
+	background-color: #34495e;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 26px;
+	width: 50px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}
+
+
+.fa-moon {
+	color: #f1c40f;
+}
+
+.fa-sun {
+	color: #f39c12;
+}
+
   .toggleBtn{
     outline: none;
     border: none;
@@ -39,7 +83,7 @@ export const GlobalStyles = createGlobalStyle`
     outline: none;
     border: none;
   }
-  
+
   .gradientTitle{
     text-decoration: none;
     color: var(--textNormal);

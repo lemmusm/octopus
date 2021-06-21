@@ -1,14 +1,14 @@
 import React from "react"
 
 import Layout from "../layouts/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 import ContactMenu from "../routes/contact_menu"
 
 const ContactPage = () => {
   return (
     <Layout>
-      <SEO title="Contact" />
+      <Seo title="Contact" />
       <div className="lg:mt-20 pt-20 xl:0 p-5 w-full flex flex-wrap">
         {ContactMenu.map((contacto, index) => {
           return (
