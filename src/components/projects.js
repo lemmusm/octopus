@@ -22,7 +22,7 @@ const Proyectos = () => {
           <div className="font-bold text-xl mb-2">HEALTH WEBSITE</div>
           <p className="colorText text-base">
             Website for "UNI-CA Clínica Ambulatoria" developed with
-            React.js/Next.js (Server Side Rendering) framework, styled
+            NextJS (Server Side Rendering) framework, styled
             components, Bootstrap CSS framework and Firebase Cloud Firestore for
             realtime database, Google API and Google Analytics.
           </p>
@@ -30,20 +30,11 @@ const Proyectos = () => {
         <div className="px-6 py-4">
           <span className="inline-block bg-transparent px-3 py-1 my-1 text-sm font-semibold colorText rounded mr-2 linkProjects">
             <a
-              href="https://unicaclinicaambulatoria.netlify.app/"
+              href="https://uni-ca.com.mx/"
               target="_blank"
               rel="noopener noreferrer"
             >
               Go to website
-            </a>
-          </span>
-          <span className="inline-block bg-transparent px-3 py-1 my-1 text-sm font-semibold colorText rounded mr-2 linkProjects">
-            <a
-              href="https://github.com/lemmusm/unica-nxjs"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Repo Github
             </a>
           </span>
         </div>
